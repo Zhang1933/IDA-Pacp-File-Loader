@@ -8,3 +8,14 @@
 * 添加代码注释，优化代码可读性。
 * 增加节中表示数据包序号功能。
 
+## 本地编译
+
+* 将下载的IDA SDK文件复制到此目录下,命名为`idasdk`。
+* 用`visual studio`打开`IDA-Pacp-File-Loader.sln`文件。
+* Build Solution.
+
+编译好的dll在`x64/Debug_32`文件目录下,名字为`IDA-Pacp-File-Loader.dll`。
+
+
+将编译好的`IDA-Pacp-File-Loader.dll`文件放在`<IDA DIR>/loader/`目录下就OK了。
+
