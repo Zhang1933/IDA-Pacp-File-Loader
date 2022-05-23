@@ -8,9 +8,14 @@
 #include "../ldr/idaldr.h"// SDK中idaldr.h文件路径
 #include <typeinf.hpp>
 
-//for timeval
-#include <stdint.h>
+
+#ifdef _WIN64 
 #include<winsock.h>
+#elif __unix__
+#include<sys/time.h>
+#else
+#error Unsupported platform compile on win64 or linux!
+#endif
 
 
 #define PCAP_MAGIC 0xA1B2C3D4
